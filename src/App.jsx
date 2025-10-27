@@ -7,6 +7,8 @@ import ParentCardOne from './components/props/children/ParentCardOne.jsx';
 import ParentCardTwo from './components/props/children/ParentCardTwo.jsx';
 import ParentCardThree from './components/props/children/ParentCardThree.jsx';
 
+import Counter from './components/useState/Counter/Counter.jsx';
+
 import './App.css';
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
       <ParentCardOne />
       <ParentCardTwo />
       <ParentCardThree />
+      <Counter />
     </div>
   );
 }
