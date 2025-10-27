@@ -1,15 +1,14 @@
-import ParentGreeting from './components/greeting/ParentGreeting.jsx';
-import ParentProfile from './components/profile/ParentProfile.jsx';
+import ParentGreeting from './components/props/data/ParentGreeting.jsx';
+import ParentProfile from './components/props/object/ParentProfile.jsx';
 
 import './App.css';
 
 function App() {
   return (
-    <>
-      <h1>Hello!</h1>
+    <div className="app-wrapper">
       <ParentGreeting />
       <ParentProfile />
-    </>
+    </div>
   );
 }
 

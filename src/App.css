@@ -1,3 +1,6 @@
-h1 {
-  color: #ff0000;
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
 }
