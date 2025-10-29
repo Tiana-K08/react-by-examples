@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Button from '../useState/Button/Button.jsx';
+import CommonButton from '../../common-button/CommonButton.jsx';
 
 import './List.css';
 
@@ -49,7 +49,11 @@ function ListA() {
         ))}
       </ul>
       <div className="btn-container">
-        <Button onClick={handleNewStudent} label="New Student" />
+        <CommonButton
+          className="map-component-button"
+          onClick={handleNewStudent}
+          label="New Student"
+        />
       </div>
     </div>
   );

@@ -7,10 +7,10 @@ import ParentCardOne from './components/props/children/ParentCardOne.jsx';
 import ParentCardTwo from './components/props/children/ParentCardTwo.jsx';
 import ParentCardThree from './components/props/children/ParentCardThree.jsx';
 
-import Counter from './components/useState/Counter/Counter.jsx';
-import Text from './components/useState/Text/Text.jsx';
+import Counter from './components/use-state/counter/Counter.jsx';
+import Text from './components/use-state/text/Text.jsx';
 
-import ListsContainer from './components/methodMap/ListsContainer.jsx';
+import ListsContainer from './components/method-map/list-container/ListsContainer.jsx';
 
 import './App.css';
 

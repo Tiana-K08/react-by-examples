@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Button from '../Button/Button.jsx';
+import CommonButton from '../../common-button/CommonButton.jsx';
 
 import './Counter.css';
 
@@ -27,13 +27,13 @@ function Counter() {
         <span>{counter}</span>
       </div>
       <div className="btn-container">
-        <Button
-          className="styled-button"
+        <CommonButton
+          className="state-component-button"
           onClick={handleIncrease}
           label="Increase +"
         />
-        <Button
-          className="styled-button"
+        <CommonButton
+          className="state-component-button"
           onClick={handleDecrease}
           label="Decrease -"
         />

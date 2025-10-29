@@ -1,5 +1,5 @@
-import ListA from './ListA.jsx';
-import ListB from './ListB.jsx';
+import ListA from '../lists/ListA.jsx';
+import ListB from '../lists/ListB.jsx';
 
 import './ListsContainer.css';
 

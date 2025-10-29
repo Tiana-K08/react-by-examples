@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Button from '../useState/Button/Button.jsx';
+import CommonButton from '../../common-button/CommonButton.jsx';
 
 import './List.css';
 
@@ -29,7 +29,11 @@ function ListB() {
       <h4>Mapping using a separate helper function</h4>
       <ul className="students-list">{renderNameList()}</ul>
       <div className="btn-container">
-        <Button onClick={handleNewStudent} label="New Student" />
+        <CommonButton
+          className="map-component-button"
+          onClick={handleNewStudent}
+          label="New Student"
+        />
       </div>
     </div>
   );

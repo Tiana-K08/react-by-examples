@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Button from '../Button/Button';
+import CommonButton from '../../common-button/CommonButton.jsx';
 
 import './Text.css';
 
@@ -31,9 +31,9 @@ function Text() {
       </p>
       <div className="btn-container">
         {buttons.map((button) => (
-          <Button
+          <CommonButton
             key={button.color}
-            className="styled-button"
+            className="state-component-button"
             onClick={() => setTextColor(button.color)}
             label={button.label}
             activeColor={
@@ -43,8 +43,8 @@ function Text() {
         ))}
       </div>
       <div className="btn-container">
-        <Button
-          className="styled-button"
+        <CommonButton
+          className="state-component-button"
           onClick={() => setTextColor(initialColor)}
           label="Reset Color"
         />

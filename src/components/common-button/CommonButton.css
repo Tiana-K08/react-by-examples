@@ -1,0 +1,14 @@
+.state-component-button {
+  margin: 0 10px;
+  width: 120px;
+  padding: 10px;
+  background-color: #38f938;
+  border-radius: 5px;
+}
+
+.map-component-button {
+  padding: 10px 20px;
+  background-color: #2822c2;
+  border-radius: 5px;
+  color: #ffffff;
+}
