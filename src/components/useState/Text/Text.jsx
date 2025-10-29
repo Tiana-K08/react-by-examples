@@ -37,12 +37,28 @@ function Text() {
         rerum, saepe velit ex.
       </p>
       <div className="btn-container">
-        <Button onClick={handleTextRed} label="Text Red" />
-        <Button onClick={handleTextBlue} label="Text Blue" />
-        <Button onClick={handleTextGreen} label="Text Green" />
+        <Button
+          className="styled-button"
+          onClick={handleTextRed}
+          label="Text Red"
+        />
+        <Button
+          className="styled-button"
+          onClick={handleTextBlue}
+          label="Text Blue"
+        />
+        <Button
+          className="styled-button"
+          onClick={handleTextGreen}
+          label="Text Green"
+        />
       </div>
       <div className="btn-container">
-        <Button onClick={handleResetColor} label="Reset Color" />
+        <Button
+          className="styled-button"
+          onClick={handleResetColor}
+          label="Reset Color"
+        />
       </div>
     </div>
   );

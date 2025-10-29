@@ -27,8 +27,16 @@ function Counter() {
         <span>{counter}</span>
       </div>
       <div className="btn-container">
-        <Button onClick={handleIncrease} label="Increase +" />
-        <Button onClick={handleDecrease} label="Decrease -" />
+        <Button
+          className="styled-button"
+          onClick={handleIncrease}
+          label="Increase +"
+        />
+        <Button
+          className="styled-button"
+          onClick={handleDecrease}
+          label="Decrease -"
+        />
       </div>
     </div>
   );
