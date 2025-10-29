@@ -5,20 +5,23 @@ import Button from '../Button/Button';
 import './Text.css';
 
 function Text() {
-  const initialColor = { color: '#000000' };
+  const initialColor = '#000000';
+  const redColor = '#de0202';
+  const blueColor = '#0505e3';
+  const greenColor = '#05aa2b';
 
   const [textColor, setTextColor] = useState(initialColor);
 
   const handleTextRed = () => {
-    setTextColor({ color: '#de0202' });
+    setTextColor(redColor);
   };
 
   const handleTextBlue = () => {
-    setTextColor({ color: '#0505e3' });
+    setTextColor(blueColor);
   };
 
   const handleTextGreen = () => {
-    setTextColor({ color: '#05aa2b' });
+    setTextColor(greenColor);
   };
 
   const handleResetColor = () => {
@@ -28,7 +31,7 @@ function Text() {
   return (
     <div className="text-wrapper">
       <h2>Example №2</h2>
-      <p style={textColor}>
+      <p style={{ color: textColor }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
         consectetur dolorem obcaecati debitis culpa ipsam iusto repellat, vero
         accusamus quidem soluta, libero neque totam suscipit? Similique placeat
@@ -41,16 +44,19 @@ function Text() {
           className="styled-button"
           onClick={handleTextRed}
           label="Text Red"
+          activeColor={textColor === redColor ? redColor : initialColor}
         />
         <Button
           className="styled-button"
           onClick={handleTextBlue}
           label="Text Blue"
+          activeColor={textColor === blueColor ? blueColor : initialColor}
         />
         <Button
           className="styled-button"
           onClick={handleTextGreen}
           label="Text Green"
+          activeColor={textColor === greenColor ? greenColor : initialColor}
         />
       </div>
       <div className="btn-container">

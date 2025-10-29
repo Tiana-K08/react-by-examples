@@ -2,7 +2,11 @@ import './Button.css';
 
 function Button(props) {
   return (
-    <button className={props.className} onClick={props.onClick}>
+    <button
+      className={props.className}
+      style={{ color: props.activeColor }}
+      onClick={props.onClick}
+    >
       {props.label}
     </button>
   );
