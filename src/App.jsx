@@ -6,6 +6,7 @@ import ParentCards from './components/props/children/ParentCards.jsx';
 import ParentCardOne from './components/props/children/ParentCardOne.jsx';
 import ParentCardTwo from './components/props/children/ParentCardTwo.jsx';
 import ParentCardThree from './components/props/children/ParentCardThree.jsx';
+import InClassParentGreeting from './components/props/in-class/InClassParentGreeting.jsx';
 
 import Counter from './components/use-state/counter/Counter.jsx';
 import Text from './components/use-state/text/Text.jsx';
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="app-wrapper">
       <ParentGreeting />
+      <InClassParentGreeting />
       <ParentProfile />
       <ParentProfileDest />
       <ParentButton />
