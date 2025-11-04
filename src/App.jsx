@@ -10,6 +10,7 @@ import InClassParentGreeting from './components/props/in-class/InClassParentGree
 
 import Counter from './components/use-state/counter/Counter.jsx';
 import Text from './components/use-state/text/Text.jsx';
+import InClassPageContainer from './components/use-state/states-in-class/InClassPageContainer.jsx';
 
 import ListsContainer from './components/method-map/list-container/ListsContainer.jsx';
 
@@ -30,6 +31,7 @@ function App() {
 
       <Counter />
       <Text />
+      <InClassPageContainer />
 
       <ListsContainer />
     </div>
