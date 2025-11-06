@@ -1,0 +1,18 @@
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nav-wrapper > a {
+  width: 120px;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #000000;
+  background-color: #fff894;
+  border-radius: 20px;
+}

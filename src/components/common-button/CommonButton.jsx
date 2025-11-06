@@ -1,6 +1,6 @@
 import './CommonButton.css';
 
-function Button(props) {
+export default function Button(props) {
   return (
     <button
       className={props.className}
@@ -11,5 +11,3 @@ function Button(props) {
     </button>
   );
 }
-
-export default Button;

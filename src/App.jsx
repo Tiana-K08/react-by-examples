@@ -1,43 +1,23 @@
-import ParentGreeting from './components/props/data/ParentGreeting.jsx';
-import ParentProfile from './components/props/object/ParentProfile.jsx';
-import ParentProfileDest from './components/props/destructuring/ParentProfileDest.jsx';
-import ParentButton from './components/props/function/ParentButton.jsx';
-import ParentCards from './components/props/children/ParentCards.jsx';
-import ParentCardOne from './components/props/children/ParentCardOne.jsx';
-import ParentCardTwo from './components/props/children/ParentCardTwo.jsx';
-import ParentCardThree from './components/props/children/ParentCardThree.jsx';
-import PageContainer from './components/use-state/states/PageContainer.jsx';
-import InClassParentGreeting from './components/props/in-class/InClassParentGreeting.jsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Counter from './components/use-state/counter/Counter.jsx';
-import Text from './components/use-state/text/Text.jsx';
-import InClassPageContainer from './components/use-state/states-in-class/InClassPageContainer.jsx';
-
-import ListsContainer from './components/method-map/list-container/ListsContainer.jsx';
+import NavigationContainer from './components/navigation/NavigationContainer.jsx';
+import PageProps from './components/pages/PageProps.jsx';
+import PageUseState from './components/pages/PageUseState.jsx';
+import PageMethodMap from './components/pages/PageMethodMap.jsx';
 
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="app-wrapper">
-      <ParentGreeting />
-      <InClassParentGreeting />
-      <ParentProfile />
-      <ParentProfileDest />
-      <ParentButton />
-      <ParentCards />
-      <ParentCardOne />
-      <ParentCardTwo />
-      <ParentCardThree />
-
-      <Counter />
-      <Text />
-      <PageContainer />
-      <InClassPageContainer />
-
-      <ListsContainer />
-    </div>
+    <Router>
+      <div className="page-wrapper">
+        <NavigationContainer />
+        <Routes>
+          <Route path="/" element={<PageProps />} />
+          <Route path="/use-state" element={<PageUseState />} />
+          <Route path="/map" element={<PageMethodMap />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
-
-export default App;
