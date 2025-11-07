@@ -16,3 +16,11 @@
   background-color: #fff894;
   border-radius: 20px;
 }
+
+/* .nav-wrapper > .active {
+  background-color: #8bdde2;
+} */
+
+.nav-wrapper > .nav-link-active {
+  background-color: #8bdde2;
+}
