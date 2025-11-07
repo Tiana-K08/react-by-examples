@@ -1,4 +1,4 @@
-import ListContainer from '../examples/method-map/lists/ListsContainer.jsx';
+import ListContainer from '../components/examples/method-map/lists/ListsContainer';
 
 import './Page.css';
 
