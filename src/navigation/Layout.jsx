@@ -1,17 +1,14 @@
-import NavigationContainer from './NavigationContainer.jsx';
 import { Outlet } from 'react-router-dom';
+
+import NavigationContainer from './NavigationContainer.jsx';
 
 import './Layout.css';
 
-const Layout = () => {
+export default function Layout() {
   return (
     <div className="page-wrapper">
       <NavigationContainer />
-      <div>
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   );
-};
-
-export default Layout;
+}

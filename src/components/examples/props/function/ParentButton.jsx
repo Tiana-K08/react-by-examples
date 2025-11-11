@@ -1,9 +1,9 @@
 import ChildButton from './ChildButton.jsx';
 
 export default function ParentButton() {
-  function handleClick() {
+  const handleClick = () => {
     alert('Button clicked!');
-  }
+  };
 
   return (
     <div className="parent-container">
