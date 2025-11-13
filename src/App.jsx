@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <PageProps /> },
-      { path: '/use-state', element: <PageUseState /> },
-      { path: '/map', element: <PageMethodMap /> },
+      { path: 'use-state', element: <PageUseState /> },
+      { path: 'map', element: <PageMethodMap /> },
     ],
   },
 ]);
