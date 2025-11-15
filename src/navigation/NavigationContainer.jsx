@@ -23,6 +23,12 @@ export default function NavigationContainer() {
       >
         .map()
       </NavLink>
+      <NavLink
+        to="/dynamic-routes"
+        className={({ isActive }) => (isActive ? 'nav-link-active' : '')}
+      >
+        Dynamic routes
+      </NavLink>
     </div>
   );
 }

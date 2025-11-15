@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "Emily Johnson",
+    "age": 32,
+    "email": "emily.johnson@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Daniel Brown",
+    "age": 27,
+    "email": "daniel.brown@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Sophia Williams",
+    "age": 30,
+    "email": "sophia.williams@example.com"
+  },
+
+  {
+    "id": 4,
+    "name": "Olivia Davis",
+    "age": 24,
+    "email": "olivia.davis@example.com"
+  },
+  {
+    "id": 5,
+    "name": "Benjamin Miller",
+    "age": 34,
+    "email": "benjamin.miller@example.com"
+  },
+  {
+    "id": 6,
+    "name": "Ethan Anderson",
+    "age": 29,
+    "email": "ethan.anderson@example.com"
+  },
+  {
+    "id": 7,
+    "name": "Mia Thompson",
+    "age": 26,
+    "email": "mia.thompson@example.com"
+  }
+]
