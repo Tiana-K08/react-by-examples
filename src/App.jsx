@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './navigation/Layout.jsx';
 import PageProps from './pages/PageProps.jsx';
 import PageUseState from './pages/PageUseState.jsx';
+import PageUseEffect from './pages/PageUseEffect.jsx';
 import PageMethodMap from './pages/PageMethodMap.jsx';
 import PageDynamicRoutes from './pages/PageDynamicRoutes.jsx';
 import UserList from './components/examples/dynamic-routes/UserList.jsx';
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <PageProps /> },
       { path: 'use-state', element: <PageUseState /> },
+      { path: 'use-effect', element: <PageUseEffect /> },
       { path: 'map', element: <PageMethodMap /> },
       {
         path: 'dynamic-routes',

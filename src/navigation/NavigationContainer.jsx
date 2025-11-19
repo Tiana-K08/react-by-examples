@@ -18,6 +18,12 @@ export default function NavigationContainer() {
         useState
       </NavLink>
       <NavLink
+        to="/use-effect"
+        className={({ isActive }) => (isActive ? 'nav-link-active' : '')}
+      >
+        useEffect
+      </NavLink>
+      <NavLink
         to="/map"
         className={({ isActive }) => (isActive ? 'nav-link-active' : '')}
       >
