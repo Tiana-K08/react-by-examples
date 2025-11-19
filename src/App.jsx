@@ -8,12 +8,13 @@ import PageDynamicRoutes from './pages/PageDynamicRoutes.jsx';
 import UserList from './components/examples/dynamic-routes/UserList.jsx';
 import UserFile from './components/examples/dynamic-routes/UserFile.jsx';
 import PageNotFound from './pages/PageNotFound.jsx';
-import UserNotFound from './components/examples/dynamic-routes/UserNotFound.jsx';
+import PageError from './pages/PageError.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
+    errorElement: <PageError />,
     children: [
       { index: true, element: <PageProps /> },
       { path: 'use-state', element: <PageUseState /> },
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <UserList /> },
           { path: 'user/:id', element: <UserFile /> },
-          { path: '*', element: <UserNotFound /> },
+          { path: '*', element: <PageNotFound /> },
         ],
       },
       { path: '*', element: <PageNotFound /> },
