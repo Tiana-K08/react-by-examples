@@ -7,8 +7,12 @@ export default function InConsole() {
   const [secondState, setSecondState] = useState(0);
 
   useEffect(() => {
-    console.log('Effect is working');
-  }, [firstState, secondState]);
+    console.log('Effect is working (1)');
+  }, [firstState]);
+
+  useEffect(() => {
+    console.log('Effect is working (2)');
+  }, [secondState]);
 
   const handleChangeFirstState = () => {
     setFirstState(firstState + 1);
