@@ -6,7 +6,7 @@ import './UserList.css';
 
 export default function UserList() {
   return (
-    <div className="user-list-wrapper">
+    <div className="user-list-container">
       <h2>USERS</h2>
       {users.map((user) => (
         <Link to={`user/${user.id}`} className="user-link" key={user.id}>

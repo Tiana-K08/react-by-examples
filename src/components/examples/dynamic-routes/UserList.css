@@ -1,10 +1,10 @@
-.user-list-wrapper {
+.user-list-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.user-list-wrapper h2 {
+.user-list-container h2 {
   margin: 12px 0;
 }
 

@@ -23,7 +23,7 @@ export default function InConsole() {
   };
 
   return (
-    <div className="console-example-wrapper">
+    <div className="console-example-container">
       {console.log('Component render')}
       <h2>Example №1</h2>
       <p>The first state has been changed {firstState} times.</p>
